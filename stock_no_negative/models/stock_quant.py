@@ -27,11 +27,10 @@ class StockQuant(models.Model):
             disallowed_by_product = \
                 not quant.product_id.allow_negative_stock \
                 and not quant.product_id.categ_id.allow_negative_stock
-            disallowed_by_location = not quant.location_id.allow_negative_stock
+            disallowed_by_location = not quant.location_id._is_negative_allowed()
             if (
                 float_compare(quant.quantity, 0, precision_digits=p) == -1 and
                 quant.product_id.type == 'product' and
-                quant.location_id.usage in ['internal', 'transit'] and
                 disallowed_by_product and disallowed_by_location
             ):
                 msg_add = ''
@@ -42,5 +41,5 @@ class StockQuant(models.Model):
                     "stock level of the product '%s'%s would become negative "
                     "(%s) on the stock location '%s' and negative stock is "
                     "not allowed for this product and/or location.") % (
-                        quant.product_id.name, msg_add, quant.quantity,
+                        quant.product_id.display_name, msg_add, quant.quantity,
                         quant.location_id.complete_name))
