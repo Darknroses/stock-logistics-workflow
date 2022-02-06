@@ -10,7 +10,6 @@ class StockPicking(models.Model):
     _inherit = "stock.picking"
 
     batch_id = fields.Many2one(
-        old_name='batch_picking_id',
         string='Batch',
         domain="[('state', '=', 'draft')]",
     )
@@ -64,7 +63,10 @@ class StockPicking(models.Model):
                 for pack in pick.move_line_ids:
                     pack.qty_done = pack.product_uom_qty
             else:
-                if all(float_is_zero(pack.qty_done)
+                if all(
+                        float_is_zero(
+                            pack.qty_done,
+                            precision_rounding=pack.product_uom_id.rounding)
                         for pack in pick.move_line_ids):
                     # No qties to process, release out of the batch
                     pick.batch_id = False

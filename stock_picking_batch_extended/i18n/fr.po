@@ -19,6 +19,13 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. module: stock_picking_batch_extended
+#: model:ir.model.fields,field_description:stock_picking_batch_extended.field_stock_picking_batch__picking_count
+#: model_terms:ir.ui.view,arch_db:stock_picking_batch_extended.report_batch_picking
+#, fuzzy
+msgid "# Pickings"
+msgstr "Préparations"
+
+#. module: stock_picking_batch_extended
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch_extended.report_batch_picking
 msgid "<strong>Date:</strong>"
 msgstr "<strong>Date:</strong>"
@@ -46,6 +53,11 @@ msgid "Add to new Batch"
 msgstr ""
 
 #. module: stock_picking_batch_extended
+#: model_terms:ir.ui.view,arch_db:stock_picking_batch_extended.stock_batch_picking_form
+msgid "All pickings from this batch will be cancelled, are you sure?"
+msgstr ""
+
+#. module: stock_picking_batch_extended
 #: code:addons/stock_picking_batch_extended/wizard/batch_picking_creator.py:96
 #, python-format
 msgid ""
@@ -53,6 +65,11 @@ msgid ""
 msgstr ""
 "Tous les transferts sélectionnés sont déjà dans un bon de préparation ou ont "
 "un statut invalide."
+
+#. module: stock_picking_batch_extended
+#: model_terms:ir.ui.view,arch_db:stock_picking_batch_extended.stock_batch_picking_form
+msgid "All undone pickings from this batch will be removed, are you sure?"
+msgstr ""
 
 #. module: stock_picking_batch_extended
 #: model_terms:ir.ui.view,arch_db:stock_picking_batch_extended.res_config_settings_view_form
@@ -319,7 +336,7 @@ msgid "Notes"
 msgstr "Notes"
 
 #. module: stock_picking_batch_extended
-#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:223
+#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:240
 #, python-format
 msgid "Nothing to print."
 msgstr ""
@@ -453,13 +470,13 @@ msgid "The user to which the pickings are assigned"
 msgstr "L'utilisateur en charge du traitement du bon de préparation"
 
 #. module: stock_picking_batch_extended
-#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:143
+#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:160
 #, python-format
 msgid "These Batches have no pickings"
 msgstr "Ces bons de préparation n'ont pas de transferts"
 
 #. module: stock_picking_batch_extended
-#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:141
+#: code:addons/stock_picking_batch_extended/models/stock_batch_picking.py:158
 #, python-format
 msgid "This Batch has no pickings"
 msgstr "Ce bon de préparation n'a pas de transfert"
