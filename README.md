@@ -25,7 +25,7 @@ addon | version | maintainers | summary
 [delivery_procurement_group_carrier](delivery_procurement_group_carrier/) | 14.0.1.1.0 |  | Delivery Procurement Group Carrier
 [delivery_total_weight_from_packaging](delivery_total_weight_from_packaging/) | 14.0.1.0.1 |  | Include packaging weight on move, transfer and package.
 [procurement_auto_create_group_carrier](procurement_auto_create_group_carrier/) | 14.0.1.1.0 |  | Procurement Auto Create Group Carrier
-[product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 14.0.1.0.2 |  | This module makes the product customer code visible in the stock moves of a picking.
+[product_supplierinfo_for_customer_picking](product_supplierinfo_for_customer_picking/) | 14.0.1.1.0 |  | This module makes the product customer code visible in the stock moves of a picking.
 [product_supplierinfo_picking](product_supplierinfo_picking/) | 14.0.1.0.0 |  | This module makes the product supplier code visible in the stock moves of a picking.
 [purchase_stock_picking_invoice_link](purchase_stock_picking_invoice_link/) | 14.0.1.1.0 |  | Adds link between purchases, pickings and invoices
 [sale_line_returned_qty](sale_line_returned_qty/) | 14.0.1.0.0 |  | Track returned quantity of sale order lines.
@@ -49,7 +49,7 @@ addon | version | maintainers | summary
 [stock_move_line_auto_fill](stock_move_line_auto_fill/) | 14.0.1.0.0 |  | Stock Move Line auto fill
 [stock_move_quick_lot](stock_move_quick_lot/) | 14.0.1.0.0 |  | Set lot name and end date directly on picking operations
 [stock_no_negative](stock_no_negative/) | 14.0.1.0.1 |  | Disallow negative stock levels by default
-[stock_owner_restriction](stock_owner_restriction/) | 14.0.1.0.1 |  | Do not reserve quantity with assigned owner
+[stock_owner_restriction](stock_owner_restriction/) | 14.0.1.0.2 |  | Do not reserve quantity with assigned owner
 [stock_partner_delivery_window](stock_partner_delivery_window/) | 14.0.1.2.2 |  | Define preferred delivery time windows for partners
 [stock_picking_auto_create_lot](stock_picking_auto_create_lot/) | 14.0.1.0.0 | [![sergio-teruel](https://github.com/sergio-teruel.png?size=30px)](https://github.com/sergio-teruel) | Auto create lots for incoming pickings
 [stock_picking_back2draft](stock_picking_back2draft/) | 14.0.1.0.0 |  | Reopen cancelled pickings
@@ -87,7 +87,7 @@ addon | version | maintainers | summary
 [stock_restrict_lot](stock_restrict_lot/) | 14.0.1.1.2 | [![florian-dacosta](https://github.com/florian-dacosta.png?size=30px)](https://github.com/florian-dacosta) | Base module that add back the concept of restrict lot on stock move
 [stock_return_request](stock_return_request/) | 14.0.1.0.2 |  | Stock Return Request
 [stock_scheduler_assignation_horizon](stock_scheduler_assignation_horizon/) | 14.0.1.1.0 |  | Set a timeframe limit to the delivery scheduler
-[stock_split_picking](stock_split_picking/) | 14.0.1.1.0 |  | Split a picking in two not transferred pickings
+[stock_split_picking](stock_split_picking/) | 14.0.1.1.1 |  | Split a picking in two not transferred pickings
 [stock_valuation_layer_by_category](stock_valuation_layer_by_category/) | 14.0.1.0.0 |  | Display stock valuation layer by category
 [stock_valuation_layer_usage](stock_valuation_layer_usage/) | 14.0.1.0.1 |  | Trace where has the stock valuation been used in, including the quantities taken.
 [stock_valuation_no_developer_mode](stock_valuation_no_developer_mode/) | 14.0.1.0.1 |  | Stock valuation layer no developer mode
